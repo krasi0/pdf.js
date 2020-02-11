@@ -143,10 +143,10 @@ function getViewerConfiguration() {
       customScaleOption: document.getElementById("customScaleOption"),
       previous: document.getElementById("previous"),
       next: document.getElementById("next"),
+      openFile: document.getElementById("openFile"),
       zoomIn: document.getElementById("zoomIn"),
       zoomOut: document.getElementById("zoomOut"),
       viewFind: document.getElementById("viewFind"),
-      openFile: document.getElementById("openFile"),
       print: document.getElementById("print"),
       presentationModeButton: document.getElementById("presentationMode"),
       download: document.getElementById("download"),
@@ -154,10 +154,11 @@ function getViewerConfiguration() {
     },
     secondaryToolbar: {
       toolbar: document.getElementById("secondaryToolbar"),
+      openFileButton: document.getElementById("secondaryOpenFile"),
       toggleButton: document.getElementById("secondaryToolbarToggle"),
       toolbarButtonContainer: document.getElementById("secondaryToolbarButtonContainer"),
-      presentationModeButton: document.getElementById("secondaryPresentationMode"),
       openFileButton: document.getElementById("secondaryOpenFile"),
+      presentationModeButton: document.getElementById("secondaryPresentationMode"),
       printButton: document.getElementById("secondaryPrint"),
       downloadButton: document.getElementById("secondaryDownload"),
       viewBookmarkButton: document.getElementById("secondaryViewBookmark"),
@@ -2004,7 +2005,7 @@ function webViewerInitialized() {
     });
   }
 
-  if (!PDFViewerApplication.supportsPrinting) {
+  if (true || !PDFViewerApplication.supportsPrinting) {
     appConfig.toolbar.print.classList.add("hidden");
     appConfig.secondaryToolbar.printButton.classList.add("hidden");
   }
