@@ -157,7 +157,6 @@ function getViewerConfiguration() {
       openFileButton: document.getElementById("secondaryOpenFile"),
       toggleButton: document.getElementById("secondaryToolbarToggle"),
       toolbarButtonContainer: document.getElementById("secondaryToolbarButtonContainer"),
-      openFileButton: document.getElementById("secondaryOpenFile"),
       presentationModeButton: document.getElementById("secondaryPresentationMode"),
       printButton: document.getElementById("secondaryPrint"),
       downloadButton: document.getElementById("secondaryDownload"),
@@ -1961,7 +1960,7 @@ function webViewerInitialized() {
   document.body.appendChild(fileInput);
 
   if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
-    appConfig.toolbar.openFile.setAttribute("hidden", "true");
+    appConfig.toolbar.openFile.setAttribute("hidden", "false");
     appConfig.secondaryToolbar.openFileButton.setAttribute("hidden", "true");
   } else {
     fileInput.value = null;
