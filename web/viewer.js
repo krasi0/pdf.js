@@ -1965,7 +1965,9 @@ function webViewerInitialized() {
   appConfig.toolbar.presentationModeButton.classList.add("hidden");
   // appConfig.secondaryToolbar.presentationModeButton.classList.add("hidden");
   appConfig.toolbar.openFile.setAttribute("hidden", "false");
+  appConfig.toolbar.openFile.classList.remove("hidden");  
   appConfig.secondaryToolbar.openFileButton.setAttribute("hidden", "false");
+  appConfig.secondaryToolbar.openFileButton.classList.remove("hidden");
 
   if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
     appConfig.toolbar.openFile.setAttribute("hidden", "false");
@@ -13547,7 +13549,7 @@ function () {
       previous: options.previous,
       next: options.next,
       // krasi0
-      openFile: options.openFile,
+      // openFile: options.openFile,
       zoomIn: options.zoomIn,
       zoomOut: options.zoomOut
     };
