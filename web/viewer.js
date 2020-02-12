@@ -13545,6 +13545,8 @@ function () {
       customScaleOption: options.customScaleOption,
       previous: options.previous,
       next: options.next,
+      // krasi0
+      openFile: options.openFile,
       zoomIn: options.zoomIn,
       zoomOut: options.zoomOut
     };
