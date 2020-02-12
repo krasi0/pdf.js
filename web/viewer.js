@@ -157,6 +157,7 @@ function getViewerConfiguration() {
       openFileButton: document.getElementById("secondaryOpenFile"),
       toggleButton: document.getElementById("secondaryToolbarToggle"),
       toolbarButtonContainer: document.getElementById("secondaryToolbarButtonContainer"),
+      openFileButton: document.getElementById("secondaryOpenFile"),
       presentationModeButton: document.getElementById("secondaryPresentationMode"),
       printButton: document.getElementById("secondaryPrint"),
       downloadButton: document.getElementById("secondaryDownload"),
