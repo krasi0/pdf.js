@@ -139,7 +139,6 @@ function getViewerConfiguration() {
       numPages: document.getElementById("numPages"),
       pageNumber: document.getElementById("pageNumber"),
       openFile: document.getElementById("openFile"),
-      openFileButton: document.getElementById("secondaryOpenFile"),
       scaleSelectContainer: document.getElementById("scaleSelectContainer"),
       scaleSelect: document.getElementById("scaleSelect"),
       customScaleOption: document.getElementById("customScaleOption"),
