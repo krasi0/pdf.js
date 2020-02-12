@@ -139,6 +139,7 @@ function getViewerConfiguration() {
       numPages: document.getElementById("numPages"),
       pageNumber: document.getElementById("pageNumber"),
       openFile: document.getElementById("openFile"),
+      openFileButton: document.getElementById("secondaryOpenFile"),
       scaleSelectContainer: document.getElementById("scaleSelectContainer"),
       scaleSelect: document.getElementById("scaleSelect"),
       customScaleOption: document.getElementById("customScaleOption"),
@@ -1962,7 +1963,7 @@ function webViewerInitialized() {
   // by krasi0
   document.getElementById("sidebarToggle").setAttribute("hidden", "true");
   appConfig.toolbar.presentationModeButton.classList.add("hidden");
-  appConfig.secondaryToolbar.presentationModeButton.classList.add("hidden");
+  // appConfig.secondaryToolbar.presentationModeButton.classList.add("hidden");
   
   
   if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
