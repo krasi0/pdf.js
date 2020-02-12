@@ -1964,8 +1964,9 @@ function webViewerInitialized() {
   document.getElementById("sidebarToggle").setAttribute("hidden", "true");
   appConfig.toolbar.presentationModeButton.classList.add("hidden");
   // appConfig.secondaryToolbar.presentationModeButton.classList.add("hidden");
-  
-  
+  appConfig.toolbar.openFile.setAttribute("hidden", "false");
+  appConfig.secondaryToolbar.openFileButton.setAttribute("hidden", "false");
+
   if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
     appConfig.toolbar.openFile.setAttribute("hidden", "false");
     appConfig.secondaryToolbar.openFileButton.setAttribute("hidden", "false");
