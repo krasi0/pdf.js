@@ -1959,9 +1959,11 @@ function webViewerInitialized() {
   fileInput.oncontextmenu = _ui_utils.noContextMenuHandler;
   document.body.appendChild(fileInput);
 
+  document.getElementById("sidebarToggle").setAttribute("hidden", "true");
+  
   if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
     appConfig.toolbar.openFile.setAttribute("hidden", "false");
-    appConfig.secondaryToolbar.openFileButton.setAttribute("hidden", "true");
+    appConfig.secondaryToolbar.openFileButton.setAttribute("hidden", "false");
   } else {
     fileInput.value = null;
   }
@@ -2014,7 +2016,7 @@ function webViewerInitialized() {
     appConfig.secondaryToolbar.presentationModeButton.classList.add("hidden");
   }
 
-  if (PDFViewerApplication.supportsIntegratedFind) {
+  if (true || PDFViewerApplication.supportsIntegratedFind) {
     appConfig.toolbar.viewFind.classList.add("hidden");
   }
 
