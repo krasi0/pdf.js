@@ -1959,7 +1959,11 @@ function webViewerInitialized() {
   fileInput.oncontextmenu = _ui_utils.noContextMenuHandler;
   document.body.appendChild(fileInput);
 
+  // by krasi0
   document.getElementById("sidebarToggle").setAttribute("hidden", "true");
+  appConfig.toolbar.presentationModeButton.classList.add("hidden");
+  appConfig.secondaryToolbar.presentationModeButton.classList.add("hidden");
+  
   
   if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
     appConfig.toolbar.openFile.setAttribute("hidden", "false");
