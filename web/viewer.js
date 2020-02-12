@@ -1963,11 +1963,12 @@ function webViewerInitialized() {
   // by krasi0
   document.getElementById("sidebarToggle").setAttribute("hidden", "true");
   appConfig.toolbar.presentationModeButton.classList.add("hidden");
+  document.getElementById("viewBookmark").setAttribute("hidden", "true");
   // appConfig.secondaryToolbar.presentationModeButton.classList.add("hidden");
-  appConfig.toolbar.openFile.setAttribute("hidden", "false");
+  /*appConfig.toolbar.openFile.setAttribute("hidden", "false");
   appConfig.toolbar.openFile.classList.remove("hidden");  
   appConfig.secondaryToolbar.openFileButton.setAttribute("hidden", "false");
-  appConfig.secondaryToolbar.openFileButton.classList.remove("hidden");
+  appConfig.secondaryToolbar.openFileButton.classList.remove("hidden");*/
 
   if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
     appConfig.toolbar.openFile.setAttribute("hidden", "false");
